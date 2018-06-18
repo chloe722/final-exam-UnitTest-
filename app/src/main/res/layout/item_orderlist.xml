@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/item_constraint">
+
+
+    <TextView
+        android:id="@+id/title_order_nuber_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Order Number: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_order_time_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Order Time: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_order_nuber_details" />
+
+    <TextView
+        android:id="@+id/title_order_account_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Order Account: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_order_time_details" />
+
+    <TextView
+        android:id="@+id/title_total_items_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Total items: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title_status_orderlist"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="3dp"
+        android:text="Processing"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_order_nuber_orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1070612001"
+        app:layout_constraintStart_toEndOf="@+id/title_order_nuber_details"
+        app:layout_constraintTop_toTopOf="@+id/title_order_nuber_details" />
+
+    <TextView
+        android:id="@+id/textview_order_time_orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2018.06.02"
+        app:layout_constraintStart_toEndOf="@+id/title_order_time_details"
+        app:layout_constraintTop_toTopOf="@+id/title_order_time_details" />
+
+    <TextView
+        android:id="@+id/textview_order_account_orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="wayne.chen@gmail.com"
+        app:layout_constraintStart_toEndOf="@+id/title_order_account_details"
+        app:layout_constraintTop_toTopOf="@+id/title_order_account_details" />
+
+    <TextView
+        android:id="@+id/textview_total_items_orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="12"
+        app:layout_constraintBottom_toBottomOf="@+id/title_total_items_details"
+        app:layout_constraintStart_toEndOf="@+id/title_total_items_details" />
+
+    <TextView
+        android:id="@+id/title_order_price_orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Total Price: "
+        app:layout_constraintBottom_toBottomOf="@+id/textview_price_details"
+        app:layout_constraintEnd_toStartOf="@+id/textview_price_details" />
+
+    <TextView
+        android:id="@+id/textview_price_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="500"
+        app:layout_constraintBottom_toBottomOf="@+id/title_twd_details"
+        app:layout_constraintEnd_toStartOf="@+id/title_twd_details" />
+
+    <TextView
+        android:id="@+id/title_twd_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TWD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -8,5 +8,10 @@ public interface AwsCafeContract {
 
     interface View extends BaseView<Presenter>{}
 
-    interface Presenter extends BasePresenter{}
+    interface Presenter extends BasePresenter{
+
+        void transToHome();
+
+        void transToOrderList();
+    }
 }

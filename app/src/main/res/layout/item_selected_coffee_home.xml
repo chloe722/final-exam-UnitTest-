@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_order_item"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/imageview_order_item_home"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+    <TextView
+        android:id="@+id/title_order_item_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Americano"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageview_order_item_home"
+        app:layout_constraintTop_toTopOf="@+id/imageview_order_item_home" />
+
+    <TextView
+        android:id="@+id/title_type_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Type"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageview_order_item_home"
+        app:layout_constraintTop_toBottomOf="@+id/title_order_item_home" />
+
+    <TextView
+        android:id="@+id/title_sugar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sugar"
+        app:layout_constraintStart_toEndOf="@+id/imageview_order_item_home"
+        app:layout_constraintTop_toBottomOf="@+id/title_type_home" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_type_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/title_order_item_home"
+        app:layout_constraintTop_toBottomOf="@+id/title_order_item_home">
+
+        <RadioButton
+            android:id="@+id/radiobtn_iced_home"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Iced"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_hot_home"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Hot"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_sugar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/radiogroup_type_home"
+        app:layout_constraintStart_toStartOf="@+id/radiogroup_type_home"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup_type_home">
+
+        <RadioButton
+            android:id="@+id/radiobtn_yes_home"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Yes"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_no_home"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="No"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>
